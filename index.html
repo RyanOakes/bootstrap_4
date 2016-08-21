@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Full Stack Conf</title>
+    <title>Iron Yard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
           integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
 
@@ -12,24 +12,43 @@
   <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <ul class="nav navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#speakers">Speakers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#schedule">Schedule</a>
-        </li>
-      </ul>
-      <a class="navbar-brand pull-sm-right m-r-o hidden-xs-down" href="http://ryanoakes.github.io">Presented By Oakes</a>
+    <nav class="navbar navbar-dark bg-primary navbar-fixed-top">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#speakers">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#schedule">Schedule</a>
+          </li>
+        </ul>
+        <a class="navbar-brand pull-sm-right m-r-o hidden-xs-down"
+         href="http://ryanoakes.github.io">Designed By Ryan Oakes</a>
+     </div>
     </nav> <!-- /NAVBAR -->
+
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron jumbotron-fluid bg-info">
+      <div class="container text-sm-center p-t-3">
+        <h1 class="display-2">Iron Yard</h1>
+        <p class="lead">Learn to code. Take charge of your career.</p>
+
+        <div class="btn-group m-t-2" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary btn-lg">Register Now</button>
+          <a class="btn btn-secondary btn-lg" href="#speakers">See Speakers</a>
+        </div>
+
+      </div>
+    </div>
+    <!-- /JUMBOTRON -->
+
 
     <div class="container p-t-2">
 
@@ -60,16 +79,22 @@
         </div>
       </div> <!-- ABOUT -->
 
+
       <!-- SPEAKERS -->
-      <h1 class="display-4 text-xs-center m-y-3 text-muted">Speakers</h1>
+      <h1 id="speakers" class="display-4 text-xs-center m-y-3 text-muted">Speakers</h1>
       [Speakers bios go here]
+
 
       <!--  SCHEDULE -->
       <h1 class="display-4 text-xs-center m-y-3 text-muted">Schedule</h1>
       [Schedule goes here]
 
 
-      <!-- signup form -->
+      <!-- CALLOUT BUTTON -->
+      <button type="button" class="btn btn-outline-info btn-lg d-block m-x-auto m-y-3">Don't miss out, register now!</button>
+
+
+      <!-- SIGNUP FORM -->
       <hr>
       <div class="row p-y-2 text-muted">
         <div class="col-md-6 col-xl-5">
@@ -86,13 +111,48 @@
           </div>
         </div>
       </div>
-      <hr><!-- /signup form -->
+      <hr><!-- /SIGNUP FORM -->
+
+
+      <!-- FOOTER -->
+      <div class="row p-y-1">
+        <div class="col-md-7">
+          <ul class="nav nav-inline">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tracks</a>
+            </li>
+            <li class="nav-item">
+              <div class="btn-group dropup">
+                <button type="button" class="btn btn-secondary">Other Confs</button>
+                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">CSS</a>
+                  <a class="dropdown-item" href="#">Python</a>
+                  <a class="dropdown-item" href="#">Java</a>
+                  <a class="dropdown-item" href="#">Swift</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5 text-md-right">
+          <small>&copy; 2016 Ryan Oakes</small>
+        </div>
+      </div>
+      <!-- /FOOTER -->
 
     </div>  <!-- CONTAINER -->
 
 
+   <!-- JQUERY/BOOTSTRAP -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+
   </body>
 </html>

@@ -10,7 +10,7 @@
           integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
   </head>
 
-  <body>
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="200">
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-dark bg-primary navbar-fixed-top">
@@ -54,7 +54,7 @@
     <div class="container p-t-2">
 
       <!-- ABOUT  -->
-      <div class="row">
+      <div id="about" class="row">
         <div class="col-md-4 col-lg-push-4">
           <h3 class="m-b-2">About Full Stack Conf</h3>
           <img class="m-b-1 img-fluid img-rounded hidden-xs-down" src="img/pdx.jpg" alt="Portland" />
@@ -146,7 +146,7 @@
 
 
       <!--  SCHEDULE -->
-      <h1 class="display-4 text-xs-center m-y-3 text-muted">Schedule</h1>
+      <h1 id="speakers" class="display-4 text-xs-center m-y-3 text-muted">Schedule</h1>
 
       <ul class="list-group">
         <li class="list-group-item list-group-item-success">
@@ -239,7 +239,7 @@
     <!-- FORM MODAL -->
 
     <div id="register" class="modal fade">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">

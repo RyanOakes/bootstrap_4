@@ -42,7 +42,7 @@
         <p class="lead">Learn to code. Take charge of your career.</p>
 
         <div class="btn-group m-t-2" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-primary btn-lg">Register Now</button>
+          <button type="button" class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#register">Register Now</button>
           <a class="btn btn-secondary btn-lg" href="#speakers">See Speakers</a>
         </div>
 
@@ -148,8 +148,8 @@
       <!--  SCHEDULE -->
       <h1 class="display-4 text-xs-center m-y-3 text-muted">Schedule</h1>
 
-      <ul class="list=group">
-        <li class="list-group-item">
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-success">
           <h4 class="list-group-item-heading">Keynote: Internet Of Things<span class="tag tag-info tag-pill pull-xs-right">1:00pm</span></h4>
           NodeStradamus
         </li>
@@ -170,7 +170,7 @@
           Geo "Lo" Cation
         </li>
         <li class="list-group-item">
-          <h4 class="list-group-item-heading">What's Babel? <span class="tag tag-info tag-pill pull-xs-right">3:00pm</span></h4>
+          <h4 class="list-group-item-heading">What's Babel? <span class="label label-info label-pill pull-xs-right">3:00pm</span></h4>
           Json Babel
         </li>
 
@@ -178,7 +178,7 @@
 
 
       <!-- CALLOUT BUTTON -->
-      <button type="button" class="btn btn-outline-info btn-lg d-block m-x-auto m-y-3">Don't miss out, register now!</button>
+      <button type="button"  data-toggle="modal" data-target="#register" class="btn btn-outline-info btn-lg d-block m-x-auto m-y-3">Don't miss out, register now!</button>
 
 
       <!-- SIGNUP FORM -->
@@ -234,6 +234,29 @@
       <!-- /FOOTER -->
 
     </div>  <!-- CONTAINER -->
+
+
+    <!-- FORM MODAL -->
+
+    <div id="register" class="modal fade">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Register now!</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
 
    <!-- JQUERY/BOOTSTRAP -->

@@ -8,6 +8,7 @@
     <title>Iron Yard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
           integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/custom.css">
   </head>
 
   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="200">
@@ -241,7 +242,7 @@
     <div id="register" class="modal fade">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header bg-info">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -249,6 +250,12 @@
           </div>
           <div class="modal-body">
             <!--  REGISTRATION FORM -->
+            <div class="alert alert-warning alert-dismissible fade in" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <strong>Hurry!</strong> You should check in on some of those fields below.
+            </div>
 
             <form>
               <h5 class="m-b-2">Basic Info</h5>
@@ -256,13 +263,13 @@
                 <label for="name">Name:</label>
                 <input type="text" class="form-control" id="name">
               </fieldset>
-              <fieldset class="form-group">
-                <label for="mail">Email:</label>
-                <input type="email" class="form-control" id="email">
+              <fieldset class="form-group has-danger">
+                <label for="mail" class="form-control-label p-l-0">Email:</label>
+                <input type="email" class="form-control form-control-danger" id="email">
               </fieldset>
               <fieldset class="form-group">
                 <label for="role">Job Role:</label>
-                <select class="form-control" id="role" name="user_role">
+                <select class="c-select form-control" id="role" name="user_role">
                   <option value="full stack js developer">Full Stack JavaScript Developer</option>
                   <option value="front end developer">Front End Developer</option>
                   <option value="back end developer">Back End Developer</option>
@@ -270,10 +277,94 @@
                   <option value="student">Student</option>
                 </select>
               </fieldset>
-            </form>
+              <hr class="m-y-2">
+              <h5 class="m-b-2">Which topics interest you most?</h5>
 
-            <!--  /REGISTRATION FORM -->
-          </div>
+              <div class="form-group custom-controls-stacked">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">JavaScript Frameworks</span>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">JavaScript Libraries</span>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Node.js</span>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Build Tools</span>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">ES2015</span>
+                </label>
+              </div>
+
+              <hr class="m-b-2">
+              <h5 class="m-b-2">Payment Info</h5>
+
+              <div class="row">
+                <div class="col-lg-6 form-group has-success">
+                  <label for="cc-num" class="form-control-label p-l-0">Card Number:</label>
+                  <input class="form-control form-control-success" id="cc-num" type="text">
+                </div>
+
+                <div class="col-lg-3 form-group">
+                  <label for="zip">Zip Code:</label>
+                  <input class="form-control" id="zip" type="text">
+                </div>
+
+                <div class="col-lg-3 form-group">
+                  <label for="cvv">CVV:</label>
+                  <input class="form-control" id="cvv" type="text">
+                </div>
+              </div>
+
+              <div class="row">
+                <label class="col-lg-12">Expiration Data:</label>
+
+                <div class=" col-lg-8 form-group">
+                  <select class="c-select form-control" id="exp-month">
+                    <option value="1">1 - January</option>
+                    <option value="2">2 - February</option>
+                    <option value="3">3 - March</option>
+                    <option value="4">4 - April</option>
+                    <option value="5">5 - May</option>
+                    <option value="6">6 - June</option>
+                    <option value="7">7 - July</option>
+                    <option value="8">8 - August</option>
+                    <option value="9">9 - September</option>
+                    <option value="10">10 - October</option>
+                    <option value="11">11 - November</option>
+                    <option value="12">12 - December</option>
+                </select>
+                </div>
+
+                <div class="col-lg-4 form-group">
+                  <select class="c-select form-control" id="exp-year">
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                  </select>
+                </div>
+              </div>
+
+              <hr class="m-b-2">
+              <button type="submit" class="btn btn-primary btn-lg">Register</button>
+
+
+            </form>
+          </div> <!--  /REGISTRATION FORM -->
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
